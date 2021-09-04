@@ -1,7 +1,7 @@
 .navbar {
   position: absolute;
   width: 100%;
-  background: #b1b1b1;
+  background: #5b849d;
   color: #fff;
   top: 0;
   left: 0;
@@ -54,6 +54,21 @@
   font-size: 20px;
 }
 
+#imgLogo {
+  display: none;
+}
+
+.navbartop-btn-a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+.navbartop-btn-a:hover {
+  color: rgb(85, 84, 84);
+}
+
 @media (max-width: 991px) {
   .navbar {
     padding: 0;
@@ -83,12 +98,18 @@
     width: 100% !important;
     height: auto;
     flex: none !important;
-    color: #000;
-    background: #f3f3f3;
+    color: rgb(255, 255, 255);
+    background: #567c94;
   }
   .navbar-opened:host .top-navbar a {
     display: block;
     width: 100%;
     line-height: 56px !important;
+  }
+  #imgLogo {
+    display: block;
+  }
+  #HakunaLogo {
+    display: none;
   }
 }

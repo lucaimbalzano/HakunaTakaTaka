@@ -6,25 +6,27 @@
       fxLayoutWrap="wrap"
       fxLayoutAlign="start center"
     >
-      <div class="navbar-logo">
-        <a routerLink="/"
-          ><img
-            src="../../../assets/images/africa-icon-20.jpg"
-            height="60px;"
-            width="60px"
-        /></a>
-      </div>
       <button
         mat-icon-button
-        color="accent"
+        color="white"
         class="navbar-toggle"
         (click)="toggleNavbar()"
       >
         <mat-icon>{{ !navbarOpened ? "menu" : "close" }}</mat-icon>
       </button>
     </div>
+    <img
+      src="../../../assets/images/africa-icon-20.jpg"
+      height="50px;"
+      width="50px"
+      id="imgLogo"
+    />
+
     <div fxFlex class="top-navbar">
       <span fxFlex></span>
+      <a class="navbartop-btn-a" routerLink="home" id="HakunaLogo"
+        >Hakuna Taka Taka</a
+      >
       <a mat-button class="navbartop-btn" routerLink="home"
         ><strong>About Us</strong></a
       >
