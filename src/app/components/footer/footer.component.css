@@ -1,0 +1,35 @@
+.container-list-footer {
+  display: flex;
+  padding: 5px 10px 10px 5px;
+  justify-content: center;
+}
+.list-footer {
+  margin: 0 100px 100px 0;
+}
+
+.list-footer-start {
+  margin-left: 10px;
+}
+
+.footer-li {
+  height: 40px;
+
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: rgb(114, 110, 110);
+}
+
+#imgLogo {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
