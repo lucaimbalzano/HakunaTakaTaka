@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444;
+  background-color: rgb(201, 199, 199);
+}
+
+a {
+  color: #4fa6d5;
+}
+
+a:hover {
+  color: #45beff;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-primary {
+  font-family: "Roboto", sans-serif;
+}
+
+.box1 {
+  height: 400px;
+  width: 500px;
+  background-color: #45beff;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
