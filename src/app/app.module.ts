@@ -9,6 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModuleModule } from './module/material-module/material-module.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { MissionComponent } from './components/mission/mission.component';
+import { ContactComponent } from './components/contact/contact.component';
+//import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,17 @@ import { MissionComponent } from './components/mission/mission.component';
     NavbarComponent,
     HomeComponent,
     FooterComponent,
-    MissionComponent
+    MissionComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     MaterialModuleModule,
     AppRoutingModule,
-
+//     AgmCoreModule.forRoot({
+//       apiKey: 'AIzaSyAP0y0PaKqXKuXvHxGYtn8x9r-ZhrZth_k'
+//     })
+// ,
     BrowserAnimationsModule
   ],
   providers: [],
