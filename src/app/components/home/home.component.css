@@ -16,8 +16,12 @@
   flex-direction: column;
 }
 
+.secondShelf-right {
+  padding-top: 30px;
+}
+
 #leftTitle {
-  font-size: 54px;
+  font-size: 64px;
   color: var(--title-color);
   font-family: Ubuntu;
 }
@@ -26,4 +30,351 @@
   font-size: 24px;
   margin-top: 24px;
   line-height: 38px;
+}
+
+/* --CARDS-CONTENT-- */
+#serviceTitle {
+  font-family: "Ubuntu";
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #f2f4f8;
+  margin-bottom: 0;
+  margin-top: 20px;
+  padding-top: 15px;
+  font-size: 30px;
+}
+
+.container-cards {
+  background: #f2f4f8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  font-family: "Open Sans";
+}
+
+.education {
+  --bg-color: #ffd861;
+  --bg-color-light: #ffeeba;
+  --text-color-hover: #4c5656;
+  --box-shadow-color: rgba(255, 215, 97, 0.48);
+}
+
+.credentialing {
+  --bg-color: #b8f9d3;
+  --bg-color-light: #e2fced;
+  --text-color-hover: #4c5656;
+  --box-shadow-color: rgba(184, 249, 211, 0.48);
+}
+
+.wallet {
+  --bg-color: #ceb2fc;
+  --bg-color-light: #f0e7ff;
+  --text-color-hover: #fff;
+  --box-shadow-color: rgba(206, 178, 252, 0.48);
+}
+
+.human-resources {
+  --bg-color: #dce9ff;
+  --bg-color-light: #f1f7ff;
+  --text-color-hover: #4c5656;
+  --box-shadow-color: rgba(220, 233, 255, 0.48);
+}
+
+.card {
+  width: 220px;
+  height: 321px;
+  background: #fff;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0 24px 46px var(--box-shadow-color);
+}
+
+.card:hover .overlay {
+  transform: scale(4) translateZ(0);
+}
+
+.card:hover .circle {
+  border-color: var(--bg-color-light);
+  background: var(--bg-color);
+}
+
+.card:hover .circle:after {
+  background: var(--bg-color-light);
+}
+
+.card:hover p {
+  color: var(--text-color-hover);
+}
+
+.card:active {
+  transform: scale(1) translateZ(0);
+  box-shadow: 0 15px 24px rgba(0, 0, 0, 0.11),
+    0 15px 24px var(--box-shadow-color);
+}
+
+.card p {
+  font-size: 17px;
+  color: #4c5656;
+  margin-top: 30px;
+  z-index: 1000;
+  transition: color 0.3s ease-out;
+}
+
+.circle {
+  width: 131px;
+  height: 131px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-out;
+}
+
+.circle:after {
+  content: "";
+  width: 118px;
+  height: 118px;
+  display: block;
+  position: absolute;
+  background: var(--bg-color);
+  border-radius: 50%;
+  top: 7px;
+  left: 7px;
+  transition: opacity 0.3s ease-out;
+}
+
+.circle svg {
+  z-index: 10000;
+  transform: translateZ(0);
+}
+
+.overlay {
+  width: 118px;
+  position: absolute;
+  height: 118px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  top: 70px;
+  left: 50px;
+  z-index: 0;
+  transition: transform 0.3s ease-out;
+}
+
+/* WHO WE ARE STYLE */
+.who-we-are-container {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+#title-who-we-are {
+  font-family: "Ubuntu";
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #ffffff;
+  margin-bottom: 0;
+  margin-top: 20px;
+  padding-top: 15px;
+  font-size: 30px;
+}
+
+.text-who-we-are-right {
+  width: 50%;
+  background: #ffffff;
+  font-size: 19px;
+  padding: 100px;
+}
+.text-who-we-are-right span {
+  margin: 10px;
+}
+
+.text-who-we-are-right-two {
+  width: 40%;
+  background: #ffffff;
+  padding-top: 80px;
+}
+
+.text-who-we-are-right-two ul {
+  list-style-type: circle;
+}
+
+.text-who-we-are-right-two span {
+  padding-left: 40px;
+}
+
+.who-we-are-left-two {
+  width: 60%;
+  background: #ffffff;
+}
+
+.who-we-are-left {
+  width: 30%;
+  background: #ffffff;
+}
+
+/* PHOTO-HAKUNA_TEAMS */
+/*FIRST*/
+.thumb {
+  width: 400px;
+  height: 300px;
+  margin: 70px auto;
+  perspective: 1000px;
+}
+
+.thumb a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../../assets/images/hakuna-img-05.jpeg");
+  background-size: 0, cover;
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+
+.thumb:hover a {
+  transform: rotateX(80deg);
+  transform-origin: bottom;
+}
+.thumb a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 36px;
+  background: inherit;
+  background-size: cover, cover;
+  background-position: bottom;
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+}
+.thumb a span {
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  font: bold 12px/36px "Open Sans";
+  text-align: center;
+  transform: rotateX(-89.99deg);
+  transform-origin: top;
+  z-index: 1;
+}
+.thumb a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  opacity: 0.15;
+  transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+  transform-origin: bottom;
+}
+
+.thumb:hover a:before {
+  opacity: 1;
+  box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+  transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+/*SECOND*/
+
+.thumb-two {
+  width: 400px;
+  height: 300px;
+  margin: 70px auto;
+  perspective: 1000px;
+}
+
+.thumb-two a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../../assets/images/hakuna-img-11.jpeg");
+  background-size: 0, cover;
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+}
+
+.thumb-two:hover a {
+  transform: rotateX(80deg);
+  transform-origin: bottom;
+}
+.thumb-two a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 36px;
+  background: inherit;
+  background-size: cover, cover;
+  background-position: bottom;
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+}
+.thumb-two a span {
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  font: bold 12px/36px "Open Sans";
+  text-align: center;
+  transform: rotateX(-89.99deg);
+  transform-origin: top;
+  z-index: 1;
+}
+.thumb-two a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  opacity: 0.15;
+  transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+  transform-origin: bottom;
+}
+
+.thumb-two:hover a:before {
+  opacity: 1;
+  box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+  transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+.fade-who-we-are-container {
+  width: 100%;
+  height: 30px;
+  background: linear-gradient(to bottom, #ffffff 0%, #5b849d 100%);
 }
