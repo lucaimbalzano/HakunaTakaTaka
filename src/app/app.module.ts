@@ -8,13 +8,15 @@ import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModuleModule } from './module/material-module/material-module.module';
 import { FooterComponent } from './components/footer/footer.component';
+import { MissionComponent } from './components/mission/mission.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    MissionComponent
   ],
   imports: [
     BrowserModule,
