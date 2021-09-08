@@ -10,6 +10,7 @@ import { MaterialModuleModule } from './module/material-module/material-module.m
 import { FooterComponent } from './components/footer/footer.component';
 import { MissionComponent } from './components/mission/mission.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 //import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
@@ -24,6 +25,7 @@ import { ContactComponent } from './components/contact/contact.component';
   imports: [
     BrowserModule,
     MaterialModuleModule,
+    ReactiveFormsModule,
     AppRoutingModule,
 //     AgmCoreModule.forRoot({
 //       apiKey: 'AIzaSyAP0y0PaKqXKuXvHxGYtn8x9r-ZhrZth_k'

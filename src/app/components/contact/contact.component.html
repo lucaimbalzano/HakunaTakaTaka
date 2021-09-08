@@ -1,12 +1,48 @@
 <div class="container-contact">
   <header>CONTACT US</header>
 
-  <form id="form" class="topBefore">
-    <input id="name" type="text" placeholder="NAME" />
-    <input id="address" type="text" placeholder="ADDRESS" />
-    <input id="number" type="text" placeholder="NUMBER" />
-    <input id="email" type="text" placeholder="E-MAIL" />
-    <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+  <form
+    id="form"
+    class="topBefore"
+    [formGroup]="form"
+    #contactInformation
+    (ngSubmit)="contactForm(contactInformation)"
+  >
+    <input id="name" type="text" placeholder="NAME" formControlName="name" />
+    <input
+      id="address"
+      type="text"
+      placeholder="ADDRESS"
+      formControlName="address"
+    />
+    <input
+      id="number"
+      type="text"
+      placeholder="NUMBER"
+      formControlName="number"
+    />
+    <input
+      id="email"
+      type="text"
+      placeholder="E-MAIL"
+      formControlName="email"
+    />
+    <textarea
+      id="message"
+      type="text"
+      placeholder="MESSAGE"
+      formControlName="message"
+    ></textarea>
     <input id="submit" type="submit" value="SEND" />
   </form>
+</div>
+
+<div class="bin-contact-us">
+  <img src="../../../assets/images/hakuna-img-06.jpeg" />
+  <h2>
+    <span>
+      The most important piece in the house<br /><br />
+      Is the GARBAGE CAN
+    </span>
+  </h2>
 </div>
