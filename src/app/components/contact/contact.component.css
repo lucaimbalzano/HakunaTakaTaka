@@ -260,3 +260,21 @@ h2 span {
 .closebtn:hover {
   color: black;
 }
+
+@media only screen and (min-width: 280px) and (max-width: 409px) {
+  #form {
+    width: 162px;
+    margin: 0;
+  }
+
+  .bin-contact-us {
+    display: block;
+  }
+  input,
+  #message {
+    width: 280px;
+  }
+  #submit {
+    width: 312px;
+  }
+}

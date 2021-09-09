@@ -15,7 +15,7 @@ export class ContactComponent implements OnInit {
   message : string;
   private contact = new Contact();
   form : FormGroup;
-  notification:string;
+  notification:string="";
 
   //create form object
   // form = new FormGroup({
