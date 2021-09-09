@@ -33,3 +33,14 @@ a:hover {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+@media only screen and (min-width: 270px) and (max-width: 469px) {
+  .list-footer-start {
+    padding-left: 50px;
+  }
+  #span-up {
+    display: none;
+  }
+  #span-down {
+    display: block;
+  }
+}

@@ -3,6 +3,7 @@
   justify-content: center;
   margin-left: 20px;
   padding-left: 60px;
+  padding-top: 40px;
 }
 
 .subTitle span {
@@ -181,9 +182,10 @@
 }
 
 /* WHO WE ARE STYLE */
-.who-we-are-container {
+.who-we-are-container,
+.who-we-are-container-two {
   display: flex;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 #title-who-we-are {
@@ -199,7 +201,7 @@
 }
 
 .text-who-we-are-right {
-  width: 50%;
+  width: 38%;
   background: #ffffff;
   font-size: 19px;
   padding: 100px;
@@ -377,4 +379,136 @@
   width: 100%;
   height: 30px;
   background: linear-gradient(to bottom, #ffffff 0%, #5b849d 100%);
+  display: block;
+}
+@media only screen and (max-width: 2770px) {
+  .fade-who-we-are-container {
+    display: block;
+  }
+}
+@media only screen and (max-width: 970px) {
+  .container-cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .who-we-are-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .who-we-are-container-two {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .who-we-are-left,
+  .who-we-are-left-two {
+    width: auto;
+  }
+
+  #card-services {
+    width: 500px;
+    margin-bottom: 20px;
+  }
+  .overlay {
+    left: 190px;
+  }
+  .subTitle {
+    flex-flow: column;
+  }
+  #leftTitle {
+    font-size: 40px;
+  }
+  .firstShelf-left {
+    padding-top: 70px;
+  }
+  #leftSubtitle {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 471px) {
+  .who-we-are-container-two {
+    padding-bottom: 130px;
+  }
+  #img-subTitle {
+    width: 400px;
+  }
+  #card-service {
+    width: 314px;
+  }
+
+  .fade-who-we-are-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  #leftSubtitle {
+    font-size: 18px;
+    margin-top: 1px;
+  }
+  #img-subTitle {
+    width: 300px;
+  }
+  #card-services {
+    width: 245px;
+  }
+
+  .overlay {
+    width: 175px;
+    position: absolute;
+    height: 164px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    top: 251px;
+  }
+
+  .who-we-are-container-two {
+    padding-bottom: 130px;
+  }
+}
+
+@media only screen and (min-width: 270px) and (max-width: 469px) {
+  #img-subTitle {
+    width: 200px;
+  }
+
+  #leftTitle {
+    font-size: 25px;
+  }
+  .subTitle {
+    margin-left: -40px;
+    padding-left: auto;
+  }
+  .subTitle span {
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-top: 1px;
+  }
+  .text-who-we-are-right-two {
+    font-size: 13px;
+    padding: 50px;
+    width: auto;
+    padding: 30px;
+  }
+  .text-who-we-are-right {
+    font-size: 13px;
+    width: auto;
+  }
+  .thumb,
+  .thumb-two {
+    width: 250px;
+  }
+
+  .who-we-are-container-two {
+    padding-bottom: 250px;
+  }
+
+  .fade-who-we-are-container {
+    height: 431px;
+  }
 }

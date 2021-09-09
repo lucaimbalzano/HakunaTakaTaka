@@ -21,3 +21,20 @@
   height: 2165px;
   background-color: white;
 }
+@media only screen and (max-width: 970px) {
+  .container {
+    height: 4323px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 4623px;
+  }
+}
+
+@media only screen and (min-width: 270px) and (max-width: 469px) {
+  .container {
+    height: 4272px;
+  }
+}
