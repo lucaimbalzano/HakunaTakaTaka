@@ -15,9 +15,6 @@ export class ContactService {
 
     sendContact(contact: Contact): Observable<any> {
       let url = this.baseUri + "/sendingEmail";
-      console.log("service part");
-      console.log(contact);
-      console.log(url);
       return this.http.post(url, contact);
   }
 }

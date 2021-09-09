@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ContactService } from 'src/app/service/contact.service';
 import { Contact } from 'src/app/shared/contact';
+import { forbiddenNameValidator } from 'src/app/shared/validator/contact.validators';
 
 
 @Component({
@@ -13,23 +14,30 @@ export class ContactComponent implements OnInit {
   txtValue:string = null;
   message : string;
   private contact = new Contact();
-
+  form : FormGroup;
+  notification:string;
 
   //create form object
-  form = new FormGroup({
-    name : new FormControl('', Validators.required),
-    address: new FormControl('',Validators.required),
-    number: new FormControl('', Validators.required),
-    email: new FormControl('', Validators.required),
-    message: new FormControl('', Validators.required)
-  });
+  // form = new FormGroup({
+  //   name : new FormControl('', [Validators.required,forbiddenNameValidator]),
+  //   address: new FormControl('',Validators.required),
+  //   number: new FormControl('', Validators.required),
+  //   email: new FormControl('', [Validators.required,Validators.email]),
+  //   message: new FormControl('', Validators.required)
+  // });
 
   constructor(private contactService: ContactService) { 
    
   }
 
   ngOnInit(): void {
-    
+    this.form = new FormGroup({
+      name : new FormControl('', [Validators.required,forbiddenNameValidator]),
+      address: new FormControl('',Validators.required),
+      number: new FormControl('', Validators.required),
+      email: new FormControl('', [Validators.required,Validators.email]),
+      message: new FormControl('', Validators.required)
+    });
   }
 
   onTextChange(value)
@@ -52,10 +60,12 @@ export class ContactComponent implements OnInit {
       
       response => {
         let result =response.text();
-        console.log(result);
+        this.notification = result;
      },
-     error  =>{
-      alert("Error: "+error);
+     error  =>{       
+      let result =error.text();
+      this.notification = result;
+      
      } 
     );
   }

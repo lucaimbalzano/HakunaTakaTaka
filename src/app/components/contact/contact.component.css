@@ -192,6 +192,17 @@ textarea:hover {
   color: #e2dedb;
 }
 
+#validators {
+  font-size: 10px;
+  color: #faa;
+}
+
+/* #submit .btn.disabled,
+.btn[disabled],
+fieldset:disabled {
+  cursor: not-allowed;
+} */
+
 /* BIN CONTACT IMG  */
 
 .bin-contact-us {
@@ -219,4 +230,33 @@ h2 span {
   background: rgb(0, 0, 0); /* fallback color */
   background: rgba(0, 0, 0, 0.7);
   padding: 10px;
+}
+
+/* NOTIFICATIONS */
+
+.alert-container {
+  display: flex;
+  justify-content: center;
+}
+.alert {
+  padding: 20px;
+  background-color: #5b849d;
+  color: white;
+  width: 50%;
+  box-shadow: #2e2e2e;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
 }

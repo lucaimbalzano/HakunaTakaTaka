@@ -14,9 +14,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ContactService } from './service/contact.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
+
+
 //import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
+  
   declarations: [
     AppComponent,
     NavbarComponent,

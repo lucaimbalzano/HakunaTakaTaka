@@ -15,6 +15,9 @@
       formControlName="name"
       required
     />
+    <span id="validators" *ngIf="Name.invalid && Name.touched"
+      >Name is required.</span
+    >
 
     <input
       id="address"
@@ -22,28 +25,66 @@
       placeholder="ADDRESS"
       formControlName="address"
     />
+
+    <span id="validators" *ngIf="Address.invalid && Address.touched"
+      >Address is required.</span
+    >
     <input
       id="number"
       type="text"
       placeholder="NUMBER"
       formControlName="number"
     />
+    <span id="validators" *ngIf="Number.invalid && Number.touched"
+      >Number is required.</span
+    >
     <input
       id="email"
       type="text"
       placeholder="E-MAIL"
       formControlName="email"
     />
+
+    <span id="validators" *ngIf="Email.invalid && Email.touched"
+      >Insert valid an email</span
+    >
+
     <textarea
       id="message"
       type="text"
       placeholder="MESSAGE"
       formControlName="message"
     ></textarea>
-    <button id="submit">SEND</button>
+    <span id="validators" *ngIf="Message.invalid && Message.touched"
+      >Message is required.</span
+    >
+
+    <button id="submit" [disabled]="!form.valid">SEND</button>
   </form>
 </div>
+<!-- NOTIFICATION -->
+<div class="alert-container" *ngIf="this.notification.length">
+  <div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';"
+      >&times;</span
+    >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-bell-fill"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"
+      />
+    </svg>
+    {{ this.notification }}
+  </div>
+</div>
 
+<!-- PHOTO BIN -->
 <div class="bin-contact-us">
   <img src="../../../assets/images/hakuna-img-06.jpeg" />
   <h2>
