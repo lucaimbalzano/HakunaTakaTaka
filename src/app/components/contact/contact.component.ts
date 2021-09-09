@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ContactService } from 'src/app/service/contact.service';
 import { Contact } from 'src/app/shared/contact';
 
 
@@ -9,8 +10,10 @@ import { Contact } from 'src/app/shared/contact';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
- 
+  txtValue:string = null;
+  message : string;
   private contact = new Contact();
+
 
   //create form object
   form = new FormGroup({
@@ -21,13 +24,41 @@ export class ContactComponent implements OnInit {
     message: new FormControl('', Validators.required)
   });
 
-  constructor() { }
+  constructor(private contactService: ContactService) { 
+   
+  }
 
   ngOnInit(): void {
     
   }
 
-  contactForm(contactInformation){}
+  onTextChange(value)
+  {
+    this.txtValue = value;
+    if(this.txtValue == '')
+    {
+      this.message="Cannot be empty";
+    }
+  }
+
+  contactForm(contactInformation){
+    this.contact.name = this.Name.value;
+    this.contact.address = this.Address.value;
+    this.contact.number = this.Number.value;
+    this.contact.email = this.Email.value;
+    this.contact.message = this.Message.value;
+
+    this.contactService.sendContact(this.contact).subscribe(
+      
+      response => {
+        let result =response.text();
+        console.log(result);
+     },
+     error  =>{
+      alert("Error: "+error);
+     } 
+    );
+  }
 
   get Name(){
     return this.form.get('name');

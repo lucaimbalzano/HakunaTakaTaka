@@ -8,7 +8,14 @@
     #contactInformation
     (ngSubmit)="contactForm(contactInformation)"
   >
-    <input id="name" type="text" placeholder="NAME" formControlName="name" />
+    <input
+      id="name"
+      type="text"
+      placeholder="NAME"
+      formControlName="name"
+      required
+    />
+
     <input
       id="address"
       type="text"
@@ -33,7 +40,7 @@
       placeholder="MESSAGE"
       formControlName="message"
     ></textarea>
-    <input id="submit" type="submit" value="SEND" />
+    <button id="submit">SEND</button>
   </form>
 </div>
 

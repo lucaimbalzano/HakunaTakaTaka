@@ -11,6 +11,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MissionComponent } from './components/mission/mission.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ContactService } from './service/contact.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpModule } from '@angular/http';
 //import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
@@ -27,13 +30,15 @@ import { ReactiveFormsModule } from '@angular/forms';
     MaterialModuleModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    HttpClientModule,
+    HttpModule,
 //     AgmCoreModule.forRoot({
 //       apiKey: 'AIzaSyAP0y0PaKqXKuXvHxGYtn8x9r-ZhrZth_k'
 //     })
 // ,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

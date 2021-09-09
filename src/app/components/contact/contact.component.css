@@ -174,17 +174,21 @@ textarea:hover {
   margin: -5px 0px 0px 0px;
 
   font-family: "Lato", sans-serif;
-  font-size: 0.875em;
-  color: #b3aca7;
+
+  height: 50px;
 
   outline: none;
   cursor: pointer;
 
   border: solid 1px #b3aca7;
   border-top: none;
+  color: #2e2e2e;
+  background: #f0f0f0;
+  font-size: 0.875em;
 }
 
 #submit:hover {
+  background: #5b849d;
   color: #e2dedb;
 }
 
@@ -196,9 +200,10 @@ textarea:hover {
   padding-top: 200px;
   padding-bottom: 100px;
   display: flex;
+  padding-left: 50px;
 }
 .bin-contact-us img {
-  width: 100%;
+  width: 80%;
   position: relative;
 }
 
