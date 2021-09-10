@@ -188,7 +188,7 @@ textarea:hover {
 }
 
 #submit:hover {
-  background: #5b849d;
+  background: #1d4a43;
   color: #e2dedb;
 }
 
@@ -240,7 +240,7 @@ h2 span {
 }
 .alert {
   padding: 20px;
-  background-color: #5b849d;
+  background-color: #1d4a43;
   color: white;
   width: 50%;
   box-shadow: #2e2e2e;
@@ -261,10 +261,16 @@ h2 span {
   color: black;
 }
 
+@media only screen and (min-width: 310px) and (max-width: 409px) {
+  #form {
+    width: auto;
+  }
+}
+
 @media only screen and (min-width: 280px) and (max-width: 409px) {
   #form {
-    width: 162px;
-    margin: 0;
+    width: auto;
+    margin: 0 0 0 30px;
   }
 
   .bin-contact-us {

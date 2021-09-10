@@ -1,8 +1,8 @@
 .navbar {
   position: absolute;
   width: 100%;
-  background: #5b849d;
-  color: #fff;
+  background: #1d4a43;
+  color: white;
   top: 0;
   left: 0;
   right: 0;
@@ -108,7 +108,7 @@
     height: auto;
     flex: none !important;
     color: rgb(255, 255, 255);
-    background: #567c94;
+    background: #1d4a43;
   }
   .navbar-opened:host .top-navbar a {
     display: block;

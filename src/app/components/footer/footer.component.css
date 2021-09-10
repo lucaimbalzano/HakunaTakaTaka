@@ -9,6 +9,7 @@
 
 .list-footer-start {
   margin-left: 10px;
+  color: white;
 }
 
 .footer-li {
@@ -33,6 +34,11 @@ a:hover {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
+#span-down {
+  color: white;
+}
+
 @media only screen and (min-width: 270px) and (max-width: 469px) {
   .list-footer-start {
     padding-left: 50px;
