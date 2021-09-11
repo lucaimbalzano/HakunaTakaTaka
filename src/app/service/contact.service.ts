@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class ContactService {
 
-  private baseUri ="http://localhost:8080/hakuna/takataka";
+  private baseUri ="http://hakunatakatakabackend-env.eba-yhjnehnm.us-east-2.elasticbeanstalk.com/hakuna/takataka";
   constructor(private http: Http, private router: Router) { }
 
     sendContact(contact: Contact): Observable<any> {

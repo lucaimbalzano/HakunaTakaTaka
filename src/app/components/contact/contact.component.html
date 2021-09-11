@@ -1,5 +1,19 @@
 <div class="container-contact">
   <header>CONTACT US</header>
+  <div class="container-loader">
+    <div
+      class="loader"
+      id="loadreId"
+      [style.display]="this.isVisible ? 'block' : 'none'"
+    >
+      <img
+        src="https://res.cloudinary.com/dp6zlazyt/image/upload/v1631350667/HakunaTakaTaka/hakuna-logo_tdlwsb.png"
+        height="50px"
+        width="50px;"
+        id="logo-loader"
+      />
+    </div>
+  </div>
 
   <form
     id="form"
@@ -59,7 +73,9 @@
       >Message is required.</span
     >
 
-    <button id="submit" [disabled]="!form.valid">SEND</button>
+    <button id="submit" [disabled]="!form.valid" (click)="loadLoader()">
+      SEND
+    </button>
   </form>
 </div>
 <!-- NOTIFICATION -->
@@ -86,7 +102,9 @@
 
 <!-- PHOTO BIN -->
 <div class="bin-contact-us">
-  <img src="../../../assets/images/hakuna-img-06.jpeg" />
+  <img
+    src="https://res.cloudinary.com/dp6zlazyt/image/upload/v1631347966/HakunaTakaTaka/hakuna-img-06_wklorj.jpg"
+  />
   <h2>
     <span>
       The most important piece in the house<br /><br />

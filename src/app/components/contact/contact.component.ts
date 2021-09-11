@@ -16,6 +16,7 @@ export class ContactComponent implements OnInit {
   private contact = new Contact();
   form : FormGroup;
   notification:string="";
+  isVisible=false;
 
   //create form object
   // form = new FormGroup({
@@ -31,6 +32,8 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.isVisible =false;
+
     this.form = new FormGroup({
       name : new FormControl('', [Validators.required,forbiddenNameValidator]),
       address: new FormControl('',Validators.required),
@@ -39,6 +42,11 @@ export class ContactComponent implements OnInit {
       message: new FormControl('', Validators.required)
     });
   }
+
+  loadLoader(){
+    this.isVisible=true;
+  }
+
 
   onTextChange(value)
   {
@@ -50,6 +58,8 @@ export class ContactComponent implements OnInit {
   }
 
   contactForm(contactInformation){
+
+
     this.contact.name = this.Name.value;
     this.contact.address = this.Address.value;
     this.contact.number = this.Number.value;
@@ -61,13 +71,16 @@ export class ContactComponent implements OnInit {
       response => {
         let result =response.text();
         this.notification = result;
+        this.isVisible=false;
      },
      error  =>{       
       let result =error.text();
       this.notification = result;
+      this.isVisible=false;
       
      } 
     );
+    
   }
 
   get Name(){

@@ -1,3 +1,43 @@
+.container-loader {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #000000;
+  width: 70px;
+  height: 70px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin-bottom: 10px;
+}
+
+#logo-loader {
+  padding: 5px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .container-contact {
   width: 100%;
   padding-top: 70px;
@@ -136,7 +176,7 @@ input {
 }
 
 input:hover {
-  background: #5b849d;
+  background: #1d4a43;
   color: #e2dedb;
 }
 
@@ -163,7 +203,7 @@ textarea {
 }
 
 textarea:hover {
-  background: #5b849d;
+  background: #1d4a43;
   color: #e2dedb;
 }
 
