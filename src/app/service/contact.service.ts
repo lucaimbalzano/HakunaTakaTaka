@@ -10,11 +10,11 @@ import { Observable } from 'rxjs';
 })
 export class ContactService {
 
-  private baseUri ="http://hakunatakatakabackend-env.eba-yhjnehnm.us-east-2.elasticbeanstalk.com/hakuna/takataka";
+  private baseUri ="https://xzu9ntkw05.execute-api.us-east-2.amazonaws.com/HAKUNA_STAGE";
   constructor(private http: Http, private router: Router) { }
 
     sendContact(contact: Contact): Observable<any> {
-      let url = this.baseUri + "/sendingEmail";
+      let url = this.baseUri;
       return this.http.put(url, contact);
   }
 }
