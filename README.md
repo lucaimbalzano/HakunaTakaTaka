@@ -7,13 +7,13 @@
   <img alt="Css3" src="https://img.shields.io/badge/-CSS3-00FF00?style=flat-square&logo=css3&logoColor=brown" />
   <img alt="Javascript" src="https://img.shields.io/badge/-Javascript-ADD8E6?style=flat-square&logo=javascript&logoColor=black" />
 
-## Bucket on AWS📌 `http://hakunatakatakaofficial.s3-website.af-south-1.amazonaws.com/home`
+## Bucket on AWS📌 [HakunaTakaTaka-Website.com](`http://hakunatakatakaofficial.s3-website.af-south-1.amazonaws.com/home`)
+
 ## Preview📌
-![image](https://user-images.githubusercontent.com/45575898/129701101-cd423a10-eaa2-4b8b-9a5d-fbf8618ffc83.png)
+![image](https://user-images.githubusercontent.com/45575898/153044227-54d123ef-116e-4569-a753-c617b554278e.png)
 
- https://user-images.githubusercontent.com/45575898/129693510-3eec9b65-0194-4ab0-bc19-41757e10424e.mp4
+![Peek 2022-02-08 18-43](https://user-images.githubusercontent.com/45575898/153045179-ce9db8f1-2cb9-4c68-8f06-5c83623e790e.gif)
 
-![image](https://user-images.githubusercontent.com/45575898/129700986-f72f590f-b043-41af-97cd-0b54287e5d34.png)
 
 ## Installation📌
 Run `npm install` to install all the dependencies
