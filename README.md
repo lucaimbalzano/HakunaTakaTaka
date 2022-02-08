@@ -7,7 +7,7 @@
   <img alt="Css3" src="https://img.shields.io/badge/-CSS3-00FF00?style=flat-square&logo=css3&logoColor=brown" />
   <img alt="Javascript" src="https://img.shields.io/badge/-Javascript-ADD8E6?style=flat-square&logo=javascript&logoColor=black" />
 
-## Bucket on AWS📌 [HakunaTakaTaka-Website.com](`http://hakunatakatakaofficial.s3-website.af-south-1.amazonaws.com/home`)
+## Bucket on AWS📌 [HakunaTakaTaka-Website.com](http://hakunatakatakaofficial.s3-website.af-south-1.amazonaws.com/home)
 
 ## Preview📌
 ![image](https://user-images.githubusercontent.com/45575898/153044227-54d123ef-116e-4569-a753-c617b554278e.png)
